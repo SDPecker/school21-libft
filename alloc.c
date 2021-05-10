@@ -25,3 +25,4 @@ void	*ft_strndup(const char *s, size_t n)
 	res[i] = 0;
 	return (res);
 }
+

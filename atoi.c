@@ -1,9 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h>
-
-int power (int n, int p)
+int		power (int n, int p)
 {
-	int r;
+	int		r;
 
 	r = 1;
 	while (p > 0)
@@ -14,13 +11,13 @@ int power (int n, int p)
 	return(r);
 }
 
-int ft_atoi(const char *nptr)
+int		ft_atoi(const char *nptr)
 {
-	int res;
-	int sign;
-	int digit_ctr;
-	int first_digit;
-	int i;
+	int		res;
+	int		sign;
+	int		digit_ctr;
+	int		first_digit;
+	int		i;
 
 	res = 0;
 	digit_ctr = 0;
@@ -46,10 +43,4 @@ int ft_atoi(const char *nptr)
 		i++;
 	}
 	return(res * sign);
-}
-
-int main(void)
-{
-	printf("%i\n", ft_atoi("++-------++i001a2"));
-	return(0);
 }

@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <strings.h>
-#include "libft.c"
+#include "libft.h"
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
@@ -30,13 +27,4 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	if (ft_strlen(s1) + ft_strlen(s2) == 0)
 		return (NULL);
 	
-}
-
-int		main(void)
-{
-	char	*c;
-	c = ft_substr("fuck you", 5, 3);
-	printf("%s\n", c);
-	free(c);
-	return (0);
 }
