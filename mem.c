@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -15,7 +15,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (p);
 }
 	
-void	*ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	char	*p;	
 	size_t	i;
@@ -27,7 +27,6 @@ void	*ft_bzero(void *s, size_t n)
 		p[i] = 0;
 		i++;
 	}
-	return (p);
 }
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)

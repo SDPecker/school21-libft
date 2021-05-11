@@ -1,9 +1,10 @@
 #include "libft.h"
+#include <stdio.h>
 
 int		main(void)
 {
 	char const *str = "hello world";
-	char const *sub = "world";
-	printf("%s\n", ft_strnstr(str, sub, 10));
+	char const *sub = "hello worle";
+	printf("%i\n", ft_strncmp(str, sub, 15));
 	return (0);
 }

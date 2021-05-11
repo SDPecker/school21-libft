@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 char *ft_strchr(char *s, char c)
 {
 	char	*r;
@@ -56,4 +54,16 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 	return (NULL);
+}
+
+int		strncmp(const char *s1, const char *s2, size_t n)
+{
+	size_t	i;
+	while (s1[i] && i < n)
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	return (int)(s1[i] - s2[i]);
 }
