@@ -6,14 +6,14 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	
 	res = malloc(nmemb * size);
 	if (res)
-		ft_bzero(res, nmemb * size);
+		res = ft_bzero(res, nmemb * size);
 	return (res);
 }
 
 void	*ft_strndup(const char *s, size_t n)
 {
 	char	*res;
-	int		i;
+	size_t	i;
 
 	res = (char *)malloc(n + 1);
 	i = 0;

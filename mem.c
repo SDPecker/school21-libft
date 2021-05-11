@@ -32,7 +32,7 @@ void	*ft_bzero(void *s, size_t n)
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int		i;
+	size_t	i;
 	char	*r;
 	char	*p;
 
@@ -45,12 +45,4 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		i++;
 	}
 	return(r);
-}
-
-int main(void)
-{
-	char *str;
-	str = (char *)ft_memcpy(str, "time to take a piss", 19);
-	printf("%s\n", str);
-	return 0;
 }

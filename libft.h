@@ -4,7 +4,7 @@
 #include "mem.c"
 #include "strchr.c"
 #include "upperlower.c"
-#include "add1.c"
+//#include "add1.c"
 
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_bzero(void *s, size_t n);
@@ -13,12 +13,12 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 //memmove
 //memchr
 //memcmp
-size_t	ft_strlen(char *s);
+size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strchr(char *s, char c);
 char	*ft_strrchr(char *s, char c);
-//strnstr
+char *ft_strrchr(char *s, char c);
 //strncmp
 int		ft_atoi(const char *nptr);
 int		ft_isalpha(int c);

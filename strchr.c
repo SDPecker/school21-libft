@@ -1,8 +1,8 @@
-#include "libft.h"
+#include <stdio.h>
 
 char *ft_strchr(char *s, char c)
 {
-	char *r;
+	char	*r;
 
 	r = s;
 	while (*r)
@@ -16,8 +16,8 @@ char *ft_strchr(char *s, char c)
 
 char *ft_strrchr(char *s, char c)
 {
-	char *r;
-	int i;
+	char	*r;
+	size_t	i;
 
 	r = s;
 	while (*r)
@@ -38,17 +38,22 @@ char *ft_strrchr(char *s, char c)
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int		i;
-	int		j;
-	char	*r;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	if (!needle)
 		return (char *)(haystack);
-	while (i < len)
+	while (i < len && haystack[i])
 	{
-		j = i;
-		
+		j = 0;
+		while (needle[j] && haystack[i + j] == needle[j])
+		{
+			j++;
+			if (needle[j] == 0)
+				return (char *)&haystack[i];
+		}
+		i++;
 	}
-	
+	return (NULL);
 }

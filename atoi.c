@@ -16,7 +16,6 @@ int		ft_atoi(const char *nptr)
 	int		res;
 	int		sign;
 	int		digit_ctr;
-	int		first_digit;
 	int		i;
 
 	res = 0;
