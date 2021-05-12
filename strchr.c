@@ -1,4 +1,4 @@
-char *ft_strchr(char *s, char c)
+char	*ft_strchr(char *s, char c)
 {
 	char	*r;
 
@@ -12,7 +12,7 @@ char *ft_strchr(char *s, char c)
 	return (NULL);
 }
 
-char *ft_strrchr(char *s, char c)
+char	*ft_strrchr(char *s, char c)
 {
 	char	*r;
 	size_t	i;
@@ -56,7 +56,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-int		strncmp(const char *s1, const char *s2, size_t n)
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 	while (s1[i] && i < n)

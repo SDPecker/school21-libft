@@ -1,10 +1,10 @@
 #include "libft.h"
 #include <stdio.h>
+#include <strings.h>
 
 int		main(void)
 {
-	char const *str = "hello world";
-	char const *sub = "hello worle";
-	printf("%i\n", ft_strncmp(str, sub, 15));
-	return (0);
+	char *src = "1234567890\0";
+	char *test = ft_memchr(src, '5', 10);
+	printf ("%s\n", test);
 }
