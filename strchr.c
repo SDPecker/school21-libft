@@ -1,8 +1,8 @@
-char	*ft_strchr(char *s, char c)
+char	*ft_strchr(const char *s, char c)
 {
 	char	*r;
 
-	r = s;
+	r = (char *)s;
 	while (*r)
 	{
 		if (*r == c)
@@ -12,12 +12,12 @@ char	*ft_strchr(char *s, char c)
 	return (NULL);
 }
 
-char	*ft_strrchr(char *s, char c)
+char	*ft_strrchr(const char *s, char c)
 {
 	char	*r;
 	size_t	i;
 
-	r = s;
+	r = (char *)s;
 	while (*r)
 	{
 		r++;
